@@ -56,7 +56,7 @@ export default function App() {
           <p className="eyebrow">AI student success monitoring</p>
           <h1>Student Risk Prediction Dashboard</h1>
           <p className="hero-subtitle">
-            Fullstack demo with simulated academic data, ML prediction, automatic risk colors and confidence percentages.
+           
           </p>
         </div>
         <button className="refresh-btn" onClick={loadDashboard}>Refresh simulated data</button>
