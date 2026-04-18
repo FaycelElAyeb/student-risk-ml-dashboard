@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import StatCard from './components/StatCard';
 import ProbabilityBar from './components/ProbabilityBar';
-import logo from './assets/logo.png';
+import logo from './assets/logo.svg';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
 
