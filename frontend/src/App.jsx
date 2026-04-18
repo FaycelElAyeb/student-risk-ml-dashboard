@@ -61,18 +61,18 @@ export default function App() {
           </p>
         </div>
         <button className="refresh-btn" onClick={loadDashboard}>Refresh simulated data</button>
-      </header>*/}
+      </header>
       <header className="hero">
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
         
-        {/* Image à gauche */}
+     
         <img 
           src={logo} 
           alt="logo" 
           style={{ height: '50px', position: 'absolute', left: '10px' }} 
         />
 
-        {/* Texte centré */}
+        
         <div style={{ textAlign: 'center' }}>
           <p className="eyebrow">AI student success monitoring</p>
           <h1>Student Risk Prediction Dashboard</h1>
@@ -83,6 +83,29 @@ export default function App() {
       <button className="refresh-btn" onClick={loadDashboard}>
         Refresh simulated data
       </button>
+      </header>*/}
+      <header className="hero">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          
+          {/* LEFT: logo */}
+          <div style={{ width: '120px' }}>
+            <img src={logo} alt="logo" style={{ height: '50px' }} />
+          </div>
+
+          {/* CENTER: title */}
+          <div style={{ textAlign: 'center', flex: 1 }}>
+            <p className="eyebrow">AI student success monitoring</p>
+            <h1>Student Risk Prediction Dashboard</h1>
+          </div>
+
+          {/* RIGHT: empty (for balance) */}
+          <div style={{ width: '120px' }}></div>
+
+        </div>
+
+        <button className="refresh-btn" onClick={loadDashboard}>
+          Refresh simulated data
+        </button>
       </header>
 
       <section className="stats-grid">
