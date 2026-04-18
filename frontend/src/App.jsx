@@ -85,37 +85,36 @@ export default function App() {
       </button>
       </header>*/}
       <header className="hero">
-          <div style={{ position: 'relative', display: 'flex', alignItems: 'center', padding: '10px 0' }}>
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', padding: '10px 0' }}>
 
-            {/* LEFT: logo */}
-            <div style={{ position: 'absolute', left: '20px' }}>
-              <img 
-                src={logo} 
-                alt="logo"
-                style={{
-                  height: '70px',
-                  objectFit: 'contain',
-                  borderRadius: '16px',
-                  backgroundColor: '#fff',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
-                }}
-              />
-            </div>
-
-            {/* CENTER: title */}
-            <div style={{ margin: '0 auto', textAlign: 'center' }}>
-              <p className="eyebrow">AI student success monitoring</p>
-              <h1 style={{ margin: 0 }}>Student Risk Prediction Dashboard</h1>
-            </div>
-
-            {/* RIGHT: button */}
-            <div style={{ position: 'absolute', right: '20px' }}>
-              <button className="refresh-btn" onClick={loadDashboard}>
-                Refresh simulated data
-              </button>
-            </div>
-
+          {/* LEFT: logo */}
+          <div style={{ position: 'absolute', left: '20px' }}>
+            <img 
+              src={logo} 
+              alt="logo"
+              style={{
+                height: '70px',
+                objectFit: 'contain',
+                borderRadius: '16px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
+              }}
+            />
           </div>
+
+          {/* CENTER: title */}
+          <div style={{ margin: '0 auto', textAlign: 'center' }}>
+            <p className="eyebrow">AI student success monitoring</p>
+            <h1 style={{ margin: 0 }}>Student Risk Prediction Dashboard</h1>
+          </div>
+
+          {/* RIGHT: button */}
+          <div style={{ position: 'absolute', right: '20px' }}>
+            <button className="refresh-btn" onClick={loadDashboard}>
+              Refresh simulated data
+            </button>
+          </div>
+
+        </div>
       </header>
 
       <section className="stats-grid">
