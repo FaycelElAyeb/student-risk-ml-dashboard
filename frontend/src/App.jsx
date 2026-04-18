@@ -85,36 +85,35 @@ export default function App() {
       </button>
       </header>*/}
       <header className="hero">
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', padding: '10px 0' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 
           {/* LEFT: logo */}
-          <div style={{ position: 'absolute', left: '20px' }}>
-            <img 
-              src={logo} 
+          <div style={{ width: '120px' }}>
+            <img
+              src={logo}
               alt="logo"
               style={{
                 height: '70px',
                 objectFit: 'contain',
-                borderRadius: '16px',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
+                borderRadius: '16px'
               }}
             />
           </div>
 
           {/* CENTER: title */}
-          <div style={{ margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ textAlign: 'center', flex: 1 }}>
             <p className="eyebrow">AI student success monitoring</p>
-            <h1 style={{ margin: 0 }}>Student Risk Prediction Dashboard</h1>
+            <h1>Student Risk Prediction Dashboard</h1>
           </div>
 
-          {/* RIGHT: button */}
-          <div style={{ position: 'absolute', right: '20px' }}>
-            <button className="refresh-btn" onClick={loadDashboard}>
-              Refresh simulated data
-            </button>
-          </div>
+          {/* RIGHT: empty (for balance) */}
+          <div style={{ width: '120px' }}></div>
 
         </div>
+
+        <button className="refresh-btn" onClick={loadDashboard}>
+          Refresh simulated data
+        </button>
       </header>
 
       <section className="stats-grid">
