@@ -6,7 +6,8 @@
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; background: linear-gradient(180deg, #081120 0%, #0f1d33 100%); }
+/*body { margin: 0; background: linear-gradient(180deg, #081120 0%, #0f1d33 100%); }*/
+body { margin: 0;  background-color: #074d31; }
 button { font: inherit; cursor: pointer; }
 
 .page {
