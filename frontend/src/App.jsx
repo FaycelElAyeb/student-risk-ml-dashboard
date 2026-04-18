@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import StatCard from './components/StatCard';
 import ProbabilityBar from './components/ProbabilityBar';
+import logo from './assets/logo.png';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
 
@@ -51,7 +52,7 @@ export default function App() {
 
   return (
     <div className="page">
-      <header className="hero">
+      {/*<header className="hero">
         <div>
           <p className="eyebrow">AI student success monitoring</p>
           <h1>Student Risk Prediction Dashboard</h1>
@@ -60,6 +61,28 @@ export default function App() {
           </p>
         </div>
         <button className="refresh-btn" onClick={loadDashboard}>Refresh simulated data</button>
+      </header>*/}
+      <header className="hero">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+          
+          {/* Image à gauche */}
+          <img 
+            src={logo} 
+            alt="logo" 
+            style={{ height: '50px', position: 'absolute', left: '10px' }} 
+          />
+
+          {/* Texte centré */}
+          <div style={{ textAlign: 'center' }}>
+            <p className="eyebrow">AI student success monitoring</p>
+            <h1>Student Risk Prediction Dashboard</h1>
+          </div>
+
+        </div>
+
+        <button className="refresh-btn" onClick={loadDashboard}>
+          Refresh simulated data
+        </button>
       </header>
 
       <section className="stats-grid">
